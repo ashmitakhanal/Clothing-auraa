@@ -137,6 +137,18 @@
             <p class="copyright">&copy; 2026 Cotton Aura. All rights reserved.</p>
         </div>
     </footer>
+<script>
+      // Tracking clicks for Cotton Aura products
+      document.querySelectorAll('.btn-secondary').forEach(button => {
+        button.addEventListener('click', function() {
+          gtag('event', 'add_to_cart', {
+            'event_label': this.parentElement.querySelector('h3').innerText
+          });
+        });
+      });
+    </script>
 
-</body>
+</body> </html>
+    </body>
+
                                                 </html>
