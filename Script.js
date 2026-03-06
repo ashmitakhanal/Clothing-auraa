@@ -7,9 +7,8 @@ function updateCartUI() {
 
 function addToCart(name, price) {
     cart.push({ name, price });
+    updateCartUI(); // This is what changes the "0" to "1" on your screen
     localStorage.setItem('cottonAuraCart', JSON.stringify(cart));
-    updateCartUI();
-    alert(name + " has been added to your cart!");
 }
 
 function checkout() {
